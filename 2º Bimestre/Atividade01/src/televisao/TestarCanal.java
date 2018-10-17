@@ -26,7 +26,7 @@ public class TestarCanal {
 			byte op = input.nextByte();
 			
 			if(op == 0) break;
-			
+			  
 			if(!tv.ligar && op != 1){
 				System.out.println("Sua TV está desligada");
 			}else{

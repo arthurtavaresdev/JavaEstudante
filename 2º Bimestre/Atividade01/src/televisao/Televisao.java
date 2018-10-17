@@ -61,7 +61,7 @@ public class Televisao {
 		
 		System.out.println("O Canal atual da TV é :" + this.canal);
 		
-	}
+	} 
 	
 	
 }
