@@ -39,7 +39,7 @@ public class Testar {
 
 		Carro car = new Carro(nomeCar, fab, ano, valor);
 
-		car.descontarValor(ano);
+		car.descontarValor(ano,valor);
 		car.verificarFabricante();
 		car.imprimirCarro();
 

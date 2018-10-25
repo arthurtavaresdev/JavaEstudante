@@ -27,39 +27,43 @@ public class Carro {
 		
 	}
 	
-	void descontarValor(int ano){
+	void descontarValor(int ano,float valor){
 		
 		this.ano = ano;
 		System.out.println("-=-=-=-=-=-=-=-=-=-= Desconto ? -=-=-=-=-=-=-=-=-=-=");
 		
-		if(ano > 2010){
+		if(ano > 2012 && (valor > 20000 && valor < 30000)){
 			System.out.println("Desconto de 10%");
 			System.out.println("Motivo: Ano de fabricação maior que 2010");
 			this.valor *= 0.90;
+			
 		}
-		else if(ano >= 2005 && ano <= 2010){
+		else if(ano >= 2008 && ano <= 2012 && (valor <= 20000)){
 			System.out.println("Desconto de 15%");
 			System.out.println("Motivo: Ano de fabricação entre 2005 e 2010");
-
 			this.valor *= 0.85;
+			
 		}else{
+			
 			System.out.println("Sem DESCONTO ;-;");
+			
 		}
 	}
 	
 	boolean verificarFabricante(){
-		if(fabricante.nome.equalsIgnoreCase("Fiat")){
-			this.aplicarDescontoFabricante();
+		if(!fabricante.nome.equalsIgnoreCase("Fiat")){
 			return true;
 		}
 		return false;
 	}
 	
 	void aplicarDescontoFabricante(){
+		if(this.verificarFabricante()){
 		System.out.println("----------------------------------------------");
 		System.out.println("Desconto de 5%");
 		System.out.println("Motivo: Carro da marca FIAT");
 		this.valor *= 0.95;
+		}
 	}
 	
 	
