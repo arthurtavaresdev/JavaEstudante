@@ -7,13 +7,17 @@ public class TesteString {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		Palavra plv = new Palavra();
-		/* System.out.println("Digite outra palavra: ");
+		
+		System.out.println("Digite outra palavra: ");
 		plv.setPalavra(input.next());
 		System.out.println("Palavra Original: "+ plv.getPalavra());
-		System.out.println();
-		*/
-		System.out.println(plv.colocarHifen("155414141515616161667"));
+		System.out.println("Tudo Maisculo: " + plv.tudoMaisculo(plv.getPalavra()));
+		System.out.println("Tudo Minisculo: " + plv.tudoMinusculo(plv.getPalavra()));
+		System.out.println("Quantos caracteres: " + plv.quantidadeCaracter(plv.getPalavra()));
+		System.out.println("Apareceu quantas vzs: " + plv.apareceuQuantasVezes(plv.getPalavra(), 'O'));
 		
+		System.out.println(plv.colocarHifen1("13314"));
+		System.out.println(plv.colocarHifen2("13314"));
 	}
 
 }

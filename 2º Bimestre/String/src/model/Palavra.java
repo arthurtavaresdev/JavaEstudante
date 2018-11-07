@@ -25,7 +25,7 @@ public class Palavra {
 		return algo.toLowerCase();
 	}
 	
-	public String tudoMaisculoo(String algo){
+	public String tudoMaisculo(String algo){
 		return algo.toUpperCase();
 	}
 	
@@ -44,7 +44,8 @@ public class Palavra {
 		return cont;
 	}
 	
-	public String colocarHifen(String algo){
+	
+	public String colocarHifen1(String algo){
 		
 		if(algo.length() <= 1){
 			System.out.println("Palavra deve possuir mais de um carácter");
@@ -52,11 +53,12 @@ public class Palavra {
 		String pt1 = algo.substring(0, algo.length()-2);
 		String pt2 = algo.substring(algo.length()-2, algo.length()-1);
 		
-		return pt1 + '-' +pt2;
+		return pt1.concat("-").concat(pt2);
 		
-	}
+	} 
 	
-	/* public String colocarHifen2(String algo){
+	
+	public String colocarHifen2(String algo){
 		
 		if(algo.length() <= 1){
 			System.out.println("Palavra deve possuir mais de um carácter");
@@ -65,19 +67,17 @@ public class Palavra {
 		char nova[] = new char[algo.length() + 1];
 		int j = 0;
 		
-		for (int i = 0; i <= algo.length(); i++) {
+		for (int i = 0; i < nova.length; i++) {
 			if(i == algo.length()-1){
-			}
+				nova[i] = '-';
 			}else{
-				resp = algo.charAt(j);
+				nova[i] = algo.charAt(j);
 				j++;
 			}
-			nova[i]
-		
 		}
 		
-		return null;
+		return String.copyValueOf(nova);
 		
-	} */
+	} 
 	
 }
