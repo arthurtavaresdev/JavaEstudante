@@ -16,8 +16,8 @@ public class TesteString {
 		System.out.println("Quantos caracteres: " + plv.quantidadeCaracter(plv.getPalavra()));
 		System.out.println("Apareceu quantas vzs: " + plv.apareceuQuantasVezes(plv.getPalavra(), 'O'));
 		
-		System.out.println(plv.colocarHifen1("13314"));
-		System.out.println(plv.colocarHifen2("13314"));
+		System.out.println(plv.colocarHifen1(plv.getPalavra()));
+		System.out.println(plv.colocarHifen2(plv.getPalavra()));
 	}
 
 }

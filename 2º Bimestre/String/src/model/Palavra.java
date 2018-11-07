@@ -50,8 +50,8 @@ public class Palavra {
 		if(algo.length() <= 1){
 			System.out.println("Palavra deve possuir mais de um carácter");
 		}
-		String pt1 = algo.substring(0, algo.length()-2);
-		String pt2 = algo.substring(algo.length()-2, algo.length()-1);
+		String pt1 = algo.substring(0, algo.length()-1);
+		String pt2 = algo.substring(algo.length()-1);
 		
 		return pt1.concat("-").concat(pt2);
 		
