@@ -1,5 +1,4 @@
 package herança;
-
 public class Gerente extends Funcionario {
 	protected int senha;
 	protected int numeroFuncionarios;
@@ -10,7 +9,7 @@ public class Gerente extends Funcionario {
 	
 	@Override
 	public double getBonificacao(){
-		return this.salario * 1.10;
+		return super.getBonificacao() + 500;
 	}
 	
 	
