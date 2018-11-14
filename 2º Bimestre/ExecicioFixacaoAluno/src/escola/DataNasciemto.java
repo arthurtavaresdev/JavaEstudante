@@ -49,9 +49,8 @@ public class DataNasciemto {
 	 */
 	
 	public boolean hojeAniversario(int diaAtual, int mesAtual){
-		
-		String niver = this.dia + "/" + this.mes;
-		String hoje = diaAtual + "/" + mesAtual;
+		String niver = this.dia + "-" + this.mes;
+		String hoje = diaAtual + "-" + mesAtual;
 		if(niver.equalsIgnoreCase(hoje)){
 			return true;
 		}

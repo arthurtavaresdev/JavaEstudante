@@ -13,7 +13,7 @@ public class Turma {
 	 */
 
 	private String turno;
-	private String serie;
+	private int serie;
 	private String sigla;
 	private String tipoEnsino;
 
@@ -25,11 +25,11 @@ public class Turma {
 		this.turno = turno; 
 	}
 
-	public String getSerie() {
+	public int getSerie() {
 		return serie;
 	}
 
-	public void setSerie(String serie) {
+	public void setSerie(int serie) {
 		this.serie = serie;
 	}
 

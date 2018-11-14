@@ -62,7 +62,7 @@ public class Aluno {
 	 */
 
 	public int verificaridade(int anoAtual) {
-		return dataNasc.getAno() - anoAtual;
+		return anoAtual - dataNasc.getAno();
 	}
 	
 	/*
@@ -73,7 +73,7 @@ public class Aluno {
 
 	public void associarAluno(Turma turma) {
 		
-		if (this.turma == null) {
+		if (this.turma != null) {
 			this.turma = turma;
 			System.out.println("Aluno associado com sucesso !");
 		}else{
