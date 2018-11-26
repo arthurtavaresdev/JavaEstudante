@@ -67,7 +67,7 @@ public class Conta {
 	}
 	
 	public void sacar(double valor){
-		if(saldo > 0){
+		if(this.saldo > 0){
 			this.saldo -= valor;
 			System.out.println("Saque realizado!");
 		}else if(this.limite > 0){

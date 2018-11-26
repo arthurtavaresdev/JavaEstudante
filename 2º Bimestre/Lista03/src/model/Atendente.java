@@ -1,6 +1,6 @@
 package model;
 
-public class Atendente {
+public class Atendente extends Pessoa {
 	
 	private int matricula;
 
@@ -12,8 +12,11 @@ public class Atendente {
 		this.matricula = matricula;
 	}
 	
+	@Override
 	public void imprimirInformacoes(){
+		super.imprimirInformacoes();
 		System.out.println("--------------- ATENDENTE ---------------");
 		System.out.println("Matricula: " + this.matricula);
+
 	}
 }

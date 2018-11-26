@@ -25,6 +25,7 @@ public class Pessoa {
 		this.data = data;
 	}
 	
+
 	public void imprimirInformacoes(){
 		System.out.println("--------------- PESSOA ---------------");
 		System.out.println("Nome: " + this.nome);

@@ -1,6 +1,6 @@
-package model;
+package model ;
 
-public class Cliente {
+public class Cliente extends Pessoa {
 
 	private int numeroContrato;
 
@@ -12,7 +12,9 @@ public class Cliente {
 		this.numeroContrato = numeroContrato;
 	}
 	
+	@Override
 	public void imprimirInformacoes(){
+		super.imprimirInformacoes();
 		System.out.println("--------------- CLIENTE ---------------");
 		System.out.println("Número do contrato " + this.numeroContrato);
 	}
