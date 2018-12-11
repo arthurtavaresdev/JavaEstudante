@@ -17,4 +17,8 @@ public class EscolaDao {
 		psmt.execute();
 	}
 	
+	public void alterarEscola(Escola escola){
+		
+	}
+	
 }
