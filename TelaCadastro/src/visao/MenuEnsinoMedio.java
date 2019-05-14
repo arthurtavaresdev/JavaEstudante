@@ -314,8 +314,6 @@ public class MenuEnsinoMedio extends javax.swing.JFrame {
         String obs = (String) campoObs.getText();
         String turma = (String) campoTurma.getSelectedItem();
                 
-
-        
         DefaultTableModel DadosUser = (DefaultTableModel) tabela.getModel();
         Object[] informacoes ={nome,sexo,cpf,cidade,estado,turma,cep,obs};
         DadosUser.addRow(informacoes);
