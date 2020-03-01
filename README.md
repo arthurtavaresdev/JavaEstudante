@@ -1,3 +1,3 @@
 # JavaEstudante
 
-Repósitorio desenvolvido para 
+Repósitorio contendo codigos de atividades do curso técnico/faculdade
